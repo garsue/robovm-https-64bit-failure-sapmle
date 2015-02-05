@@ -1,5 +1,7 @@
 The sample of the failure when connecting with https on 64bit arch.
 
+**This problem has been fixed in [robovm issue #739](https://github.com/robovm/robovm/issues/739)**
+
 # Process to reproduce
 
 Run the following command and click "Click me!" text on device.

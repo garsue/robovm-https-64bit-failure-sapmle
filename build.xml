@@ -106,6 +106,19 @@
             <arg value="-run"/>
         </exec>
     </target>
+
+    <target name="sim64" depends="init,compile" description="Run on latest iOS simulator">
+        <exec executable="./bin/robovm">
+            <arg value="-verbose"/>
+            <arg value="-properties"/>
+            <arg value="robovm.properties"/>
+            <arg value="-config"/>
+            <arg value="robovm.xml"/>
+            <arg value="-arch"/>
+            <arg value="x86_64"/>
+            <arg value="-run"/>
+        </exec>
+    </target>
     
     <target name="simIphone6plus" depends="init,compile" description="Run on iPhone6plus simulator">
         <exec executable="./bin/robovm">
